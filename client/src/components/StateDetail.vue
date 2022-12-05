@@ -5,9 +5,11 @@
     <div>
         <input class="visit-state" type="checkbox" v-model="visited" 
                v-on:change="updateVisited">
+        <!-- update state visited status when checkbox changes -->
     </div>
     <router-link v-bind:to="{ name: 'StateMap', params: {state: state.name} }">
         <img class="map-icon" src="@/assets/map_icon.png">
+        <!-- link map icon to state map component -->
     </router-link>
 </div>
 </template>
@@ -32,11 +34,6 @@ export default {
             this.$emit('update-visited', this.state.name, this.visited)
         }
     }
-    //watch: {
-    //    visited() {
-    //        this.$emit('update-visited',this.state.name, this.visited)
-    //    }
-    //}
 }
 </script>
 

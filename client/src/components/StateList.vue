@@ -34,7 +34,7 @@ export default  {
         this.fetchAllStates()
     },
     methods: {
-        fetchAllStates() {
+        fetchAllStates() { // get list of all the states
             this.$stateService.getAllStates().then(states => {
                 this.states = states
             }).catch(err => {
@@ -42,7 +42,7 @@ export default  {
                 console.error(err)
             })
         },
-        updateVisited(stateName, visited) {
+        updateVisited(stateName, visited) { // update visited status
             this.$stateService.setVisited(stateName, visited)
             .then( states => {
                 this.fetchAllStates()

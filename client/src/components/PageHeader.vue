@@ -1,4 +1,5 @@
 <template>
+<!-- header for page, imported from App.vue -->
     <div id="block-header">
         <h1 id="title">Have you visited every state?</h1>
     </div>

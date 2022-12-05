@@ -1,4 +1,5 @@
 <template>
+<!-- footer template contains links for page and credits for icons -->
 <div class="footer">
     <div class="m-2">
         <span class="p-3">

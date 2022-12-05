@@ -7,6 +7,7 @@
 
 <script>
 console.log('statesummary.vue')
+// determine how many states have been visited, and if all have been visited
 export default {
     name: 'StateSummary',
     props: {
